@@ -1,12 +1,12 @@
 <script setup>
 
-import NavBar from '../components/navbar.vue';
+import navbar from '../components/navbar.vue';
 
 </script>
 
 <template>
     <!-- NAV -->
-    <NavBar />
+    <navbar />
 
     <!-- BODY -->
 
