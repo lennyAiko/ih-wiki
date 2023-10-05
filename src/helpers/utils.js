@@ -54,3 +54,7 @@ export function getCategoryEmoji (category) {
 export function upperFirstLetter (string) {
     return `${string[0].toUpperCase()}${string.slice(1)}`
 }
+
+export function getRefLink (link) {
+    return `${link}?ref=ih-wiki`
+}
