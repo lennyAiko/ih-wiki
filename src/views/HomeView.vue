@@ -3,8 +3,7 @@
 import { ref, onMounted } from 'vue'
 import navbar from '../components/navbar.vue'
 import data from '../data/db.json'
-
-console.log(data)
+import {getCategoryEmoji, upperFirstLetter} from '../helpers/utils.js'
 
 const categories = ref()
 
@@ -29,10 +28,10 @@ onMounted(() => {
     <div>
 
         <div 
-        class="flex flex-row gap-4 m-2 items-center justify-center">
+        class="flex flex-row flex-wrap gap-4 m-2 items-center justify-center">
             <span v-for="category in categories" 
             class="rounded-full border-2 border-dashed px-2.5 py-1.5">
-                {{ category }}
+                {{ getCategoryEmoji(category) }} {{ upperFirstLetter(category) }}
             </span>
         </div>
       

@@ -1,21 +1,21 @@
 [
     {
         "name": "Indie Hackers",
-        "categories": ["community", "newsletter"],
+        "categories": ["community", "newsletter", "blog", "tool"],
         "pricing": "free",
         "description": "This is description",
         "external_link": "https://www.indiehackers.com/"
     },
     {
         "name": "Indie Hackers",
-        "categories": ["community", "tweets"],
+        "categories": ["community", "X", "website", "podcast"],
         "pricing": "free",
         "description": "This is description",
         "external_link": "https://www.indiehackers.com/"
     },
     {
         "name": "Indie Hackers",
-        "categories": ["youtube"],
+        "categories": ["youtube", "podcast", "book", "creator", "conference"],
         "pricing": "free",
         "description": "This is description",
         "external_link": "https://www.indiehackers.com/"
