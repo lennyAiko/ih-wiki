@@ -1,1 +1,23 @@
-[]
+[
+    {
+        "name": "Indie Hackers",
+        "categories": ["community", "newsletter"],
+        "pricing": "free",
+        "description": "This is description",
+        "external_link": "https://www.indiehackers.com/"
+    },
+    {
+        "name": "Indie Hackers",
+        "categories": ["community"],
+        "pricing": "free",
+        "description": "This is description",
+        "external_link": "https://www.indiehackers.com/"
+    },
+    {
+        "name": "Indie Hackers",
+        "categories": ["youtube"],
+        "pricing": "free",
+        "description": "This is description",
+        "external_link": "https://www.indiehackers.com/"
+    }
+]
