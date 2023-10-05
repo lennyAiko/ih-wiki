@@ -8,7 +8,7 @@
     },
     {
         "name": "Indie Hackers",
-        "categories": ["community"],
+        "categories": ["community", "tweets"],
         "pricing": "free",
         "description": "This is description",
         "external_link": "https://www.indiehackers.com/"

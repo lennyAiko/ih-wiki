@@ -4,6 +4,8 @@ import { ref, onMounted } from 'vue'
 import navbar from '../components/navbar.vue'
 import data from '../data/db.json'
 
+console.log(data)
+
 const categories = ref()
 
 onMounted(() => {
@@ -26,8 +28,12 @@ onMounted(() => {
 
     <div>
 
-        <div v-for="category in categories">
-            <span>{{ category }}</span>
+        <div 
+        class="flex flex-row gap-4 m-2 items-center justify-center">
+            <span v-for="category in categories" 
+            class="rounded-full border-2 border-dashed px-2.5 py-1.5">
+                {{ category }}
+            </span>
         </div>
       
     </div>
