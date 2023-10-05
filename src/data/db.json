@@ -33,5 +33,33 @@
         "pricing": "freemium",
         "description": "This is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is description",
         "external_link": "https://www.indiehackers.com/"
-    }
+    },
+    {
+        "name": "Indie Hackers",
+        "categories": ["youtube", "podcast", "book", "creator", "conference"],
+        "pricing": "freemium",
+        "description": "This is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is description",
+        "external_link": "https://www.indiehackers.com/"
+    },
+    {
+		"name": "Indie Hacker",
+		"categories": ["Community", "Newsletter"],
+		"pricing": "Free",
+		"description": "Connect with developers who are sharing the strategies and revenue numbers behind their companies and side projects.",
+		"external_link": "https://www.indiehackers.com/"
+	},
+	{
+		"name": "Hacker News",
+		"categories": ["Community"],
+		"pricing": "Free",
+		"description": "Hacker News is a social news website focusing on computer science and entrepreneurship. It is run by the investment fund and startup incubator Y Combinator. In general, content that can be submitted is defined as \"anything that gratifies one's intellectual curiosity.\"",
+		"external_link": "https://news.ycombinator.com/"
+	},
+	{
+		"name": "MicroConf",
+		"categories": ["Youtube"],
+		"pricing": "Free",
+		"description": "MicroConf is a community of SaaS founders that brings together bootstrapped and independently-funded B2B SaaS companies who are not looking to chase “unicorn status'' or venture capital.",
+		"external_link": "https://www.youtube.com/@MicroConf"
+	}
 ]
