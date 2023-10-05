@@ -3,21 +3,35 @@
         "name": "Indie Hackers",
         "categories": ["community", "newsletter", "blog", "tool"],
         "pricing": "free",
-        "description": "This is description",
+        "description": "This is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is description",
         "external_link": "https://www.indiehackers.com/"
     },
     {
         "name": "Indie Hackers",
         "categories": ["community", "X", "website", "podcast"],
-        "pricing": "free",
-        "description": "This is description",
+        "pricing": "paid",
+        "description": "This is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is description",
         "external_link": "https://www.indiehackers.com/"
     },
     {
         "name": "Indie Hackers",
         "categories": ["youtube", "podcast", "book", "creator", "conference"],
-        "pricing": "free",
-        "description": "This is description",
+        "pricing": "freemium",
+        "description": "This is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is description",
+        "external_link": "https://www.indiehackers.com/"
+    },
+    {
+        "name": "Indie Hackers",
+        "categories": ["youtube", "podcast", "book", "creator", "conference"],
+        "pricing": "freemium",
+        "description": "This is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is description",
+        "external_link": "https://www.indiehackers.com/"
+    },
+    {
+        "name": "Indie Hackers",
+        "categories": ["youtube", "podcast", "book", "creator", "conference"],
+        "pricing": "freemium",
+        "description": "This is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is descriptionThis is description",
         "external_link": "https://www.indiehackers.com/"
     }
 ]

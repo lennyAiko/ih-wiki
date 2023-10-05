@@ -34,6 +34,15 @@ export function getCategoryEmoji (category) {
         case 'tool':
             emoji = '🛠️'
             break
+        case 'free':
+            emoji = '🆓'
+            break
+        case 'paid':
+            emoji = '💲'
+            break
+        case 'freemium':
+            emoji = '🆓💲'
+            break
         default:
             emoji = '❓'
             break
