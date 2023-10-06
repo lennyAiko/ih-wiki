@@ -56,19 +56,21 @@ watch(search, () => {
 </script>
 
 <template>
+
+    <div class="bg-slate-50">
     <!-- NAV -->
     <navbar @searchKey="searchChange"/>
 
     <!-- BODY -->
 
-    <div>
+    <div class="bg-slate-50">
 
         <div 
-        class="flex flex-row flex-wrap gap-3 m-2 items-center justify-center bg-white
-        xs:justify-start xs:text-sm">
+        class="flex flex-row flex-wrap gap-3 m-2 items-center justify-center
+        xs:justify-start xs:text-sm p-3">
             <button v-for="category in categories" @click="filterStore(category)"
             class=""
-            :class="category === activeCategory ? 'grayscale-0 opacity-100 rounded-full border-2 border-solid px-2.5 py-1.5 -m-[4px] font-semibold' : 'rounded-full border-2 border-dashed px-2.5 py-1.5 -m-[4px] hover:border-solid font-semibold grayscale hover:grayscale-0 opacity-50'">
+            :class="category === activeCategory ? 'grayscale-0 rounded-full border-2 border-solid px-2.5 py-1.5 -m-[4px] font-semibold bg-white' : 'rounded-full border-2 border-dashed px-2.5 py-1.5 -m-[4px] hover:border-solid font-semibold grayscale hover:grayscale-0 bg-white'">
                 {{ getCategoryEmoji(category) }} {{ upperFirstLetter(category) }}
             </button>
         </div>
@@ -76,7 +78,7 @@ watch(search, () => {
         <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 min-w-min xs:grid-cols-1 gap-3 m-3 overflow-hidden auto-cols-min auto-rows-min">
 
             <div v-for="item in filteredStore"
-            class="border rounded-lg items-start bg-slate-50 px-5 py-1.5 justify-start block overflow-hidden h-auto">
+            class="border rounded-lg items-start bg-white px-5 py-1.5 justify-start block overflow-hidden h-auto">
 
                 <h4
                 class="font-semibold text-base my-2"
@@ -108,4 +110,6 @@ watch(search, () => {
 
     <!-- FOOTER -->
     <footerbar />
+    
+    </div>
 </template>

@@ -6,7 +6,7 @@ import { getRefLink } from "../helpers/utils";
 </script>
 
 <template>
-    <nav class="border-b w-full px-4 py-2.5">
+    <nav class="border-b w-full px-4 py-2.5 bg-white">
       <div class="flex items-center justify-between">
         <div class="flex flex-row flex-nowrap max-w-sm">
           <div class="flex flex-row flex-nowrap items-center object-cover">
