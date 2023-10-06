@@ -23,6 +23,11 @@ function filterStore (category) {
         return filteredStore.value = store.value
     }
 
+    if (activeCategory.value === category) {
+        activeCategory.value = ''
+        return filteredStore.value = store.value
+    }
+
     filteredStore.value = store.value.filter(item => {
         let tempCategories = item.categories.map(element => element.toLowerCase())
 
@@ -61,18 +66,17 @@ watch(search, () => {
         <div 
         class="flex flex-row flex-wrap gap-3 m-2 items-center justify-center bg-white
         xs:justify-start xs:text-sm">
-            <span v-for="category in categories" @click="filterStore(category)"
+            <button v-for="category in categories" @click="filterStore(category)"
             class=""
             :class="category === activeCategory ? 'grayscale-0 opacity-100 rounded-full border-2 border-solid px-2.5 py-1.5 -m-[4px] font-semibold' : 'rounded-full border-2 border-dashed px-2.5 py-1.5 -m-[4px] hover:border-solid font-semibold grayscale hover:grayscale-0 opacity-50'">
                 {{ getCategoryEmoji(category) }} {{ upperFirstLetter(category) }}
-            </span>
+            </button>
         </div>
 
         <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 min-w-min xs:grid-cols-1 gap-3 m-3 overflow-hidden auto-cols-min auto-rows-min">
 
             <div v-for="item in filteredStore"
-            class="border rounded-lg items-start bg-slate-50 px-5 py-1.5 justify-start block overflow-hidden h-auto"
-            :key="item.name">
+            class="border rounded-lg items-start bg-slate-50 px-5 py-1.5 justify-start block overflow-hidden h-auto">
 
                 <h4
                 class="font-semibold text-base my-2"
