@@ -9,6 +9,12 @@ const categories = ref()
 const store = ref(data)
 const filteredStore = ref()
 const search = ref('')
+const activeCategory = ref(false)
+
+function isActive() {
+    console.log(activeCategory.value)
+    activeCategory.value = !activeCategory.value
+}
 
 function searchChange(event) {
     search.value = event
@@ -37,6 +43,7 @@ onMounted(() => {
         .map(element => element.toLowerCase())
         .sort((a, b) => a.localeCompare(b))
     categories.value = [...new Set(categories.value)]
+    filterStore('all')
 })
 
 watch(search, () => {
@@ -57,12 +64,13 @@ watch(search, () => {
         class="flex flex-row flex-wrap gap-3 m-2 items-center justify-center">
             <span v-for="category in categories" @click="filterStore(category)"
             class="rounded-full border-2 border-dashed px-2.5 py-1.5 -m-[4px]
-            hover:border-solid font-semibold grayscale hover:grayscale-0">
+            hover:border-solid font-semibold grayscale hover:grayscale-0"
+            :class="{active: isActive}">
                 {{ getCategoryEmoji(category) }} {{ upperFirstLetter(category) }}
             </span>
         </div>
 
-        <div class="grid grid-cols-3 lg:grid-cols-3 min-w-min sm:grid-cols-1 gap-3 m-3 overflow-hidden auto-cols-min auto-rows-min">
+        <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 min-w-min xs:grid-cols-1 gap-3 m-3 overflow-hidden auto-cols-min auto-rows-min">
 
             <div v-for="item in filteredStore"
             class="border rounded-lg items-start bg-slate-50 px-5 py-1.5 justify-start block overflow-hidden h-auto">
