@@ -1,6 +1,6 @@
 <script setup>
 
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import navbar from '../components/navbar.vue'
 import data from '../data/db.json'
 import {getCategoryEmoji, upperFirstLetter, getRefLink} from '../helpers/utils.js'
@@ -8,6 +8,11 @@ import {getCategoryEmoji, upperFirstLetter, getRefLink} from '../helpers/utils.j
 const categories = ref()
 const store = ref(data)
 const filteredStore = ref()
+const search = ref('')
+
+function searchChange(event) {
+    search.value = event
+}
 
 function filterStore (category) {
     category = category.toLowerCase()
@@ -34,11 +39,15 @@ onMounted(() => {
     categories.value = [...new Set(categories.value)]
 })
 
+watch(search, () => {
+    filteredStore.value = store.value.filter(item => item.name.toLowerCase().includes(search.value.toLowerCase()))
+})
+
 </script>
 
 <template>
     <!-- NAV -->
-    <navbar />
+    <navbar @searchKey="searchChange"/>
 
     <!-- BODY -->
 

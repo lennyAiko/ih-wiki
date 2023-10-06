@@ -15,7 +15,7 @@ import { RouterLink } from "vue-router"
 
             <svg class="w-7 h-7 -ml-1.5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#5C5F62" d="M13.098 8H6.902c-.751 0-1.172.754-.708 1.268L9.292 12.7c.36.399 1.055.399 1.416 0l3.098-3.433C14.27 8.754 13.849 8 13.098 8Z"></path></g></svg>
           </div>
-          <input class="border-none bg-slate-200 hover:bg-slate-300 pl-3 p-2 rounded-[50px] m-1 w-full text-slate-600 text-md font-bold placeholder:text-slate-600 outline-none" type="text" placeholder="Search..."/>
+          <input @change="$emit('searchKey', $event.target.value)" class="border-none bg-slate-200 hover:bg-slate-300 pl-3 p-2 rounded-[50px] m-1 w-full text-slate-600 text-md font-bold placeholder:text-slate-600 outline-none" type="text" placeholder="Search..."/>
         </div>
         <div class="flex flex-row flex-nowrap">
           <router-link to="/about">
