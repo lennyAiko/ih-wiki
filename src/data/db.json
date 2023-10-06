@@ -4,7 +4,7 @@
         "categories": ["creator"],
         "pricing": "free",
         "description": "Lead maintainer of Sails , JavaScript engineer and Developer Advocate at Treblle. Helping developers build business on JavaScript. Teaching fullstack JavaScript, API monitoring and observability.",
-        "external_link": "https://www.indiehackers.com/"
+        "external_link": "https://dominuskelvin.dev"
     },
     {
         "name": "Indie Hackers",
@@ -12,5 +12,12 @@
         "pricing": "free",
         "description": "Connect with developers who are sharing the strategies and revenue numbers behind their companies and side projects.",
         "external_link": "https://www.indiehackers.com/"
+    },
+    {
+        "name": "What is an indie hacker?",
+        "categories": ["blog"],
+        "pricing": "free",
+        "description": "A guide to help you get started with indie hacking by @rameerez.",
+        "external_link": "https://rameerez.com/what-is-indie-hacking/?utm_source=substack&utm_medium=email"
     }
 ]
