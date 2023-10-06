@@ -9,12 +9,6 @@ const categories = ref()
 const store = ref(data)
 const filteredStore = ref()
 const search = ref('')
-const activeCategory = ref(false)
-
-function isActive() {
-    console.log(activeCategory.value)
-    activeCategory.value = !activeCategory.value
-}
 
 function searchChange(event) {
     search.value = event
@@ -50,6 +44,10 @@ watch(search, () => {
     filteredStore.value = store.value.filter(item => item.name.toLowerCase().includes(search.value.toLowerCase()))
 })
 
+function scrollToTop() {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+}
+
 </script>
 
 <template>
@@ -61,11 +59,11 @@ watch(search, () => {
     <div>
 
         <div 
-        class="flex flex-row flex-wrap gap-3 m-2 items-center justify-center">
+        class="flex flex-row flex-wrap gap-3 m-2 items-center justify-center bg-white 
+        xs:justify-start xs:text-sm">
             <span v-for="category in categories" @click="filterStore(category)"
             class="rounded-full border-2 border-dashed px-2.5 py-1.5 -m-[4px]
-            hover:border-solid font-semibold grayscale hover:grayscale-0"
-            :class="{active: isActive}">
+            hover:border-solid font-semibold grayscale hover:grayscale-0">
                 {{ getCategoryEmoji(category) }} {{ upperFirstLetter(category) }}
             </span>
         </div>
@@ -73,7 +71,8 @@ watch(search, () => {
         <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 min-w-min xs:grid-cols-1 gap-3 m-3 overflow-hidden auto-cols-min auto-rows-min">
 
             <div v-for="item in filteredStore"
-            class="border rounded-lg items-start bg-slate-50 px-5 py-1.5 justify-start block overflow-hidden h-auto">
+            class="border rounded-lg items-start bg-slate-50 px-5 py-1.5 justify-start block overflow-hidden h-auto"
+            :key="item.name">
 
                 <h4
                 class="font-semibold text-base my-2"
@@ -104,4 +103,7 @@ watch(search, () => {
     </div>
 
     <!-- FOOTER -->
+    <div class="sticky bottom-0 items-center justify-center flex p-1 font-medium mx-auto my-0 bg-white">
+        <p>Created with 💖 by <a href="https://twitter.com/c_lennyx" target="_blank">Lennox</a> | <button @click="scrollToTop">🔝</button></p>
+    </div>
 </template>
