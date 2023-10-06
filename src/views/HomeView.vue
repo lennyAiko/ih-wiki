@@ -10,6 +10,7 @@ const categories = ref()
 const store = ref(data)
 const filteredStore = ref()
 const search = ref('')
+const activeCategory = ref('')
 
 function searchChange(event) {
     search.value = event
@@ -26,8 +27,10 @@ function filterStore (category) {
         let tempCategories = item.categories.map(element => element.toLowerCase())
 
         if (tempCategories.includes(category)) {
+            activeCategory.value = category
             return item
         }
+
     })
 }
 
@@ -56,11 +59,11 @@ watch(search, () => {
     <div>
 
         <div 
-        class="flex flex-row flex-wrap gap-3 m-2 items-center justify-center bg-white 
+        class="flex flex-row flex-wrap gap-3 m-2 items-center justify-center bg-white
         xs:justify-start xs:text-sm">
             <span v-for="category in categories" @click="filterStore(category)"
-            class="rounded-full border-2 border-dashed px-2.5 py-1.5 -m-[4px]
-            hover:border-solid font-semibold grayscale hover:grayscale-0">
+            class=""
+            :class="category === activeCategory ? 'grayscale-0 opacity-100 rounded-full border-2 border-solid px-2.5 py-1.5 -m-[4px] font-semibold' : 'rounded-full border-2 border-dashed px-2.5 py-1.5 -m-[4px] hover:border-solid font-semibold grayscale hover:grayscale-0 opacity-50'">
                 {{ getCategoryEmoji(category) }} {{ upperFirstLetter(category) }}
             </span>
         </div>
