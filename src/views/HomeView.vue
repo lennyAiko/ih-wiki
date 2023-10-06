@@ -4,7 +4,7 @@ import { ref, onMounted, watch } from 'vue'
 import navbar from '../components/navbar.vue'
 import footerbar from '../components/footerbar.vue'
 import data from '../data/db.json'
-import {getCategoryEmoji, upperFirstLetter, getRefLink} from '../helpers/utils.js'
+import {getCategoryEmoji, upperFirstLetter, getRefLink, sliceString} from '../helpers/utils.js'
 
 const categories = ref()
 const store = ref(data)
@@ -84,7 +84,7 @@ watch(search, () => {
                 class="font-semibold text-base my-2"
                 >{{ item.name }}</h4>
 
-                <p class="text-sm mb-5">{{ item.description }}</p>
+                <p class="text-sm mb-5">{{ sliceString(item.description) }}</p>
 
                 <div class="flex flex-row flex-wrap items-center justify-between m-0.5">
 

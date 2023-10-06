@@ -58,3 +58,7 @@ export function upperFirstLetter (string) {
 export function getRefLink (link) {
     return `${link}?ref=ih-wiki`
 }
+
+export function sliceString (string) {
+    return `${string.slice(0, 100)}...`
+}
