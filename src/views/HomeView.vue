@@ -1,8 +1,8 @@
 <script setup>
 
 import { ref, onMounted, watch } from 'vue'
-import navbar from '../components/navbar.vue'
-import footerbar from '../components/footerbar.vue'
+import NavBar from '../components/NavBar.vue'
+import FooterBar from '../components/FooterBar.vue'
 import data from '../data/db.json'
 import {getCategoryEmoji, upperFirstLetter, getRefLink, sliceString} from '../helpers/utils.js'
 
@@ -59,7 +59,7 @@ watch(search, () => {
 
     <div class="bg-slate-50">
     <!-- NAV -->
-    <navbar @searchKey="searchChange"/>
+    <NavBar @searchKey="searchChange"/>
 
     <!-- BODY -->
 
@@ -109,7 +109,7 @@ watch(search, () => {
     </div>
 
     <!-- FOOTER -->
-    <footerbar />
+    <FooterBar />
     
     </div>
 </template>
