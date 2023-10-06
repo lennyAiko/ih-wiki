@@ -1,14 +1,14 @@
 <script setup>
 
-import navbar from '../components/navbar.vue';
-import footerbar from '../components/footerbar.vue';
+import NavBar from '../components/NavBar.vue';
+import FooterBar from '../components/FooterBar.vue';
 
 </script>
 
 <template>
-    <navbar/>
+    <NavBar/>
     
     <p>This is about page</p>
 
-    <footerbar />
+    <FooterBar />
 </template>
