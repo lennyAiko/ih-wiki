@@ -1,6 +1,6 @@
 # ih-wiki
 
-Hi, I am ih-wiki, an open-source collaborative project to share valuable resources for Indie Hackers. Users are free to contribute their knowledge, experience and insights in the realm of indie hacking. Got no experience? ih-wiki is comprehensive enough to help you navigate the indie hacking ecosystem. Work together with ih-wiki to build a collective knowledge base to empower and foster innovation for seasoned / future indie hackers.
+Hi, I am `ih-wiki`, an open-source collaborative project to share valuable resources for Indie Hackers. Users are free to contribute their knowledge, experience and insights in the realm of indie hacking. Got no experience? `ih-wiki` is comprehensive enough to help you navigate the indie hacking ecosystem. Work together with `ih-wiki` to build a collective knowledge base to empower and foster innovation for seasoned / future indie hackers.
 
 ## How to contribute
 
