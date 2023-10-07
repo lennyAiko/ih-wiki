@@ -8,7 +8,7 @@ import FooterBar from '../components/FooterBar.vue';
 <template>
     <NavBar/>
     
-    <div class="flex flex-col items-start m-24 p-6">
+    <div class="flex flex-col items-start m-24 p-6 xs:m-[8%]">
 
         <div class="">
             <router-link to="/">

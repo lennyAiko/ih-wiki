@@ -70,7 +70,6 @@ watch(search, () => {
         class="flex flex-row flex-wrap gap-3 m-2 items-center justify-center
         xs:justify-start xs:text-sm p-3">
             <button v-for="category in categories" @click="filterStore(category)"
-            class=""
             :class="category === activeCategory 
             ? 'grayscale-0 rounded-full border-2 border-solid px-2.5 py-1.5 -m-[4px] font-semibold bg-white' 
             : 'rounded-full border-2 border-dashed px-2.5 py-1.5 -m-[4px] hover:border-solid font-semibold hover:grayscale-0 bg-white grayscale'">
