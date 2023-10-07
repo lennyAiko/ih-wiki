@@ -1,14 +1,23 @@
 <script setup>
 
-import NavBar from '../components/NavBar.vue';
-import FooterBar from '../components/FooterBar.vue';
+import {ref, onMounted} from 'vue'
+
+import NavBar from '../components/NavBar.vue'
+import FooterBar from '../components/FooterBar.vue'
+import data from '../data/db.json'
+
+const counter = ref(0)
+
+onMounted(() => {
+    counter.value = data.length
+})
 
 </script>
 
 <template>
     <NavBar/>
     
-    <div class="flex flex-col items-start m-24 p-6 xs:m-[8%]">
+    <div class="flex flex-col items-start m-[84px] p-6 xs:m-[8%]">
 
         <div class="">
             <router-link to="/">
@@ -18,11 +27,13 @@ import FooterBar from '../components/FooterBar.vue';
 
         <div class="text-base max-w-5xl">
 
-            <h4 class="font-bold text-xl my-3">ih-wiki</h4>
+            <h4 class="font-bold text-xl my-2">ih-wiki</h4>
 
             <p class="mb-2">Hi, I am <strong>ih-wiki</strong>, an open-source collaborative project to share valuable resources for Indie Hackers. Users are free to contribute their knowledge, experience and insights in the realm of indie hacking. Got no experience? <strong>ih-wiki</strong> is comprehensive enough to help you navigate the indie hacking ecosystem. Work together with <strong>ih-wiki</strong> to build a collective knowledge base to empower and foster innovation for seasoned / future indie hackers.</p>
             
             <p class="mt-2">Click the + sign above or follow the instructions <a href="https://github.com/lennyAiko/ih-wiki#code-method" target="_blank" class="underline">here</a></p>
+
+            <p class="mt-2 font-light">{{ counter }} resource(s) available</p>
         </div>
 
     </div>

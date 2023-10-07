@@ -19,5 +19,12 @@
         "pricing": "free",
         "description": "A guide to help you get started with indie hacking by @rameerez.",
         "external_link": "https://rameerez.com/what-is-indie-hacking/?utm_source=substack&utm_medium=email"
+    },
+    {
+        "name": "Tim Bennetto",
+        "categories": ["creator"],
+        "pricing": "free",
+        "description": "Bootstrapped indie hacker. Building pally.com and threadcreator.com",
+        "external_link": "https://x.com/timb03?s=21"
     }
 ]
