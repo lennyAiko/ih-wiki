@@ -26,5 +26,33 @@
         "pricing": "free",
         "description": "Bootstrapped indie hacker. Building pally.com and threadcreator.com",
         "external_link": "https://x.com/timb03?s=21"
+    },
+    {
+        "name": "Building Businesses on JavaScript",
+        "categories": ["newsletter"],
+        "pricing": "free",
+        "description": "Learn how to build businesses with JavaScript and indie hacking. Real stories of real people building real businesses on JavaScript.",
+        "external_link": "https://newsletter.dominuskelvin.dev/"
+    },
+    {
+        "name": "Wilson Wilson",
+        "categories": ["creator"],
+        "pricing": "free",
+        "description": "Building senja - Wake up to an inbox full of new testimonial alerts. Share them everywhere in seconds.",
+        "external_link": "https://x.com/euboid?s=20"
+    },
+    {
+        "name": "Tally Forms",
+        "categories": ["tool"],
+        "pricing": "freemium",
+        "description": "The simplest way to create beautiful forms & surveys, for free. Made by @mariemartens & @filipminev",
+        "external_link": "https://tally.so/"
+    },
+    {
+        "name": "The Indie Maker Handbook",
+        "categories": ["book"],
+        "pricing": "paid",
+        "description": "Learn to build profitable startups the indie way by Pieter Levels",
+        "external_link": "https://readmake.com/"
     }
 ]
