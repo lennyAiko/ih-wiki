@@ -1,7 +1,7 @@
 [
     {
         "name": "Kelvin O. Omereshone",
-        "categories": ["creator"],
+        "categories": ["creator", "youtube"],
         "pricing": "free",
         "description": "Lead maintainer of Sails , JavaScript engineer and Developer Advocate at Treblle. Helping developers build business on JavaScript. Teaching fullstack JavaScript, API monitoring and observability.",
         "external_link": "https://dominuskelvin.dev"
@@ -54,5 +54,40 @@
         "pricing": "paid",
         "description": "Learn to build profitable startups the indie way by Pieter Levels",
         "external_link": "https://readmake.com/"
+    },
+    {
+        "name": "Tony Dinh",
+        "categories": ["creator"],
+        "pricing": "free",
+        "description": "Indie hacker. 🧠 @TypingMindApp $30K/mo 📸 @XnapperHQ $6K/mo 🛠 @devutils_app $5.5K/mo🪄 @blackmagic_so (Sold, was $14K/mo)",
+        "external_link": "https://tonydinh.com/"
+    },
+    {
+        "name": "Tony Dinh's Newsletter",
+        "categories": ["newsletter"],
+        "pricing": "free",
+        "description": "Monthly updates about my indie hacking journey, what I have built and learned.",
+        "external_link": "https://news.tonydinh.com/"
+    },
+    {
+        "name": "Notion",
+        "categories": ["tool"],
+        "pricing": "freemium",
+        "description": "Notion is a versatile productivity tool that combines note-taking, task management, and collaboration in one platform. With its customizable interface and extensive range of features, it empowers users to stay organized, work efficiently, and collaborate seamlessly.",
+        "external_link": "https://www.notion.so/"
+    },
+    {
+        "name": "Hacker News",
+        "categories": ["website"],
+        "pricing": "free",
+        "description": "Hacker News is a social news website focusing on computer science and entrepreneurship. It is run by the investment fund and startup incubator Y Combinator. In general, content that can be submitted is defined as \"anything that gratifies one's intellectual curiosity.\"",
+        "external_link": "https://news.ycombinator.com/"
+    },
+    {
+        "name": "Arvid Kahl",
+        "categories": ["creator"],
+        "pricing": "free",
+        "description": "Arvid Kahl is a software engineer, entrepreneur, and writer.",
+        "external_link": "https://twitter.com/arvidkahl/"
     }
 ]
