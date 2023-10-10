@@ -89,5 +89,33 @@
         "pricing": "free",
         "description": "Arvid Kahl is a software engineer, entrepreneur, and writer.",
         "external_link": "https://twitter.com/arvidkahl/"
+    },
+    {
+        "name": "The $100 Startup",
+        "categories": ["book"],
+        "pricing": "paid",
+        "description": "Bestselling book by Chris Guillebeau that offers guidance and inspiration for aspiring entrepreneurs looking to start their own businesses with minimal financial resources.",
+        "external_link": "https://www.amazon.com/The-100-Startup-Chris-Guillebeau-audiobook/dp/B0081CDIGW/ref=sr_1_1?crid=31Q4ROTEQCJN0&keywords=%24100+startup&qid=1688466921&sprefix=100+startu%2Caps%2C381&sr=8-1"
+    },
+    {
+        "name": "Rob Wailling",
+        "categories": ["creator"],
+        "pricing": "free",
+        "description": "Rob Walling is a serial entrepreneur, author, podcaster, and angel investor.",
+        "external_link": "https://twitter.com/robwalling/"
+    },
+    {
+        "name": "Tyler Tringas",
+        "categories": ["creator"],
+        "pricing": "free",
+        "description": "Tyler Tringas is an entrepreneur and venture capitalist known for his work in the startup ecosystem, particularly in the field of subscription-based businesses.",
+        "external_link": "https://twitter.com/tylertringas/"
+    },
+    {
+        "name": "SaaS Roundup",
+        "categories": ["newsletter"],
+        "pricing": "free",
+        "description": "Curated resource that delivers regular updates and insights on the latest trends, news, and strategies in the Software as a Service (SaaS) industry to help professionals stay informed and make informed business decisions.",
+        "external_link": "https://chartmogul.com/resources/saas-roundup/"
     }
 ]
