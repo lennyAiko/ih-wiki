@@ -117,5 +117,54 @@
         "pricing": "free",
         "description": "Curated resource that delivers regular updates and insights on the latest trends, news, and strategies in the Software as a Service (SaaS) industry to help professionals stay informed and make informed business decisions.",
         "external_link": "https://chartmogul.com/resources/saas-roundup/"
+    },
+    {
+        "name": "MicroConf",
+        "categories": ["youtube"],
+        "pricing": "free",
+        "description": "MicroConf is a community of SaaS founders that brings together bootstrapped and independently-funded B2B SaaS companies who are not looking to chase “unicorn status'' or venture capital.",
+        "external_link": "https://www.youtube.com/@MicroConf"
+    },    
+    {
+        "name": "The Lean Startup",
+        "categories": ["book"],
+        "pricing": "free",
+        "description": "Book by Eric Ries that introduces a methodology for developing businesses and products through iterative experimentation, validated learning, and continuous adaptation to efficiently navigate the uncertainties of the startup world.",
+        "external_link": "https://www.amazon.com/The-Lean-Startup-Eric-Ries-audiobook/dp/B005MM7HY8/ref=sr_1_1?crid=39HTZEEVHZ0DK&keywords=the+lean+startup+eric+ries&qid=1697142820&sprefix=the+lean+start%2Caps%2C495&sr=8-1"
+    },    
+    {
+        "name": "Tweet Hunter",
+        "categories": ["tool"],
+        "pricing": "freemium",
+        "description": "Get sales, growth and new networks. Faster than what you're currently trying.",
+        "external_link": "https://tweethunter.io/"
+    },     
+    {
+        "name": "Render",
+        "categories": ["tool"],
+        "pricing": "freemium",
+        "description": "The fastest way to host all your code. Render is a unified cloud to build and run all your apps",
+        "external_link": "https://render.com/"
+    },     
+    {
+        "name": "Paddle",
+        "categories": ["tool"],
+        "pricing": "paid",
+        "description": "Increase your revenue, reduce costs and cut down risk automatically. Our products simplify and automate your billing operations so you can focus on growth.",
+        "external_link": "https://www.paddle.com/"
+    },     
+    {
+        "name": "Feather",
+        "categories": ["tool"],
+        "pricing": "paid",
+        "description": "Write your content on Notion and automatically publish it to your SEO-friendly blog – No coding or design skills required.",
+        "external_link": "https://feather.so/"
+    },    
+    {
+        "name": "R/indiehackers",
+        "categories": ["community"],
+        "pricing": "free",
+        "description": "An indie hacker community on reddit.",
+        "external_link": "https://www.reddit.com/r/indiehackers/"
     }
 ]
