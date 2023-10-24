@@ -166,5 +166,61 @@
         "pricing": "free",
         "description": "An indie hacker community on reddit.",
         "external_link": "https://www.reddit.com/r/indiehackers/"
+    },
+    {
+        "name": "Simple.ink",
+        "categories": ["tool"],
+        "pricing": "freemium",
+        "description": "Build a website with Notion. Everything is optimized for 0-headache, so you can focus on creating and building.",
+        "external_link": "https://www.simple.ink/"
+    },
+    {
+        "name": "Ch Daniel",
+        "categories": ["creator"],
+        "pricing": "free",
+        "description": "Starting now: http://SaaSPad.co (SEO as a service for SaaS companies)⚡️ http://UseSignHouse.com⚡️ Running http://Reddit.com/r/SaaS⚡️ 11M+ all-time users⚡️ http://Simple.ink (Acquired)",
+        "external_link": "https://x.com/chddaniel?s=20"
+    },
+    {
+        "name": "Nico",
+        "categories": ["creator"],
+        "pricing": "free",
+        "description": "Dropped school, then managed +$1M in ads, then got fired. Then learned to code in 2 months, made 17 apps in 10 months and sold one for $65,000.",
+        "external_link": "https://x.com/nico_jeannen?s=20"
+    },
+    {
+        "name": "Indie Bites",
+        "categories": ["podcast"],
+        "pricing": "free",
+        "description": "Short, bite-sized conversations (15 mins) with indie hackers that have started small, profitable and bootstrapped businesses. You'll learn how they come up with ideas, what they do to validate, find those first customers and make a sustainable income. Episodes every Tuesday.",
+        "external_link": "https://indiebites.com/"
+    },
+    {
+        "name": "Hoodmaps by Pieter Levels",
+        "categories": ["blog"],
+        "pricing": "free",
+        "description": "Building a startup in public: from first line of code to frontpage of Reddit",
+        "external_link": "https://levels.io/hoodmaps/"
+    },
+    {
+        "name": "B.I.P by Kevon Cheung",
+        "categories": ["blog"],
+        "pricing": "free",
+        "description": "Building in Public Definitive Guide 2023. The secrets to building successful products with a raving audience",
+        "external_link": "https://publiclab.co/building-in-public"
+    },
+    {
+        "name": "B.I.P Cheatsheet by CH Daniel",
+        "categories": ["website"],
+        "pricing": "free",
+        "description": "The Cheatsheet initially represented my notes, but as I shared it with others, it got some positive feedback: it was not only wanted, but also needed. I made a few extra steps (which I wouldn't have done if it was just a private note) and here we are.",
+        "external_link": "https://buildinpublic.simple.ink"
+    },
+    {
+        "name": "Pieter Levels",
+        "categories": ["creator"],
+        "pricing": "free",
+        "description": "👦 php+jquery4life 📸 http://PhotoAI.com $79K MRR 🖼 http://InteriorAI.com $52K MRR 🛰 http://RemoteOK.com $47K/m 🌍 http://NomadList.com $32K/m 🏡 http://Rebase.co $14K/m 💬 http://t.me/levelsio $4K/m",
+        "external_link": "https://twitter.com/levelsio"
     }
 ]
