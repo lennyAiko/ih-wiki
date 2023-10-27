@@ -66,7 +66,13 @@ if (sessionStorage.getItem('visit') === null) {
 sessionStorage.setItem('visit', 'ih')
 
 async function analyticsData (valueToSend) {
-  await fetch(`${import.meta.env.VITE_API_URL}/${valueToSend}?secret=${import.meta.env.VITE_API_SECRET}`)
+    await fetch(`${import.meta.env.VITE_API_URL}/update?toUpdate=${valueToSend}`,{
+            method: 'GET',
+            headers: {
+                "Authorization": `Bearer ${import.meta.env.VITE_API_SECRET}`
+            }
+        }
+    )
 }
 
 
