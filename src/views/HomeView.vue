@@ -24,7 +24,6 @@ function filterStore (category) {
     }
 
     if (activeCategory.value === category) {
-        console.log(activeCategory.value)
         activeCategory.value = ''
         return filteredStore.value = store.value
     }
@@ -53,6 +52,23 @@ onMounted(() => {
 watch(search, () => {
     filteredStore.value = store.value.filter(item => item.name.toLowerCase().includes(search.value.toLowerCase()))
 })
+
+// implement counter
+
+if (sessionStorage.getItem('visit') === null) {
+    // new visit and pageview
+    analyticsData('vp')
+} else {
+    // pageview
+    analyticsData('p')
+}
+
+sessionStorage.setItem('visit', 'ih')
+
+async function analyticsData (valueToSend) {
+  await fetch(`${import.meta.env.VITE_API_URL}/${valueToSend}?secret=${import.meta.env.VITE_API_SECRET}`)
+}
+
 
 </script>
 
