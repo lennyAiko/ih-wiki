@@ -1,54 +1,21 @@
 export function getCategoryEmoji (category) {
-    let emoji = ''
-    switch(category.toLowerCase()) {
-        case 'blog':
-            emoji = '💻'
-            break
-        case 'x':
-            emoji = '⚔️'
-            break
-        case 'community':
-            emoji = '🧑‍💻️'
-            break
-        case 'newsletter':
-            emoji = '🗞'
-            break
-        case 'youtube':
-            emoji = '🎞'
-            break
-        case 'website':
-            emoji = '🌐'
-            break
-        case 'book':
-            emoji = '📖'
-            break
-        case 'creator':
-            emoji = '👷'
-            break
-        case 'conference':
-            emoji = '🤝'
-            break
-        case 'podcast':
-            emoji = '🎧'
-            break
-        case 'tool':
-            emoji = '🛠️'
-            break
-        case 'free':
-            emoji = '🆓'
-            break
-        case 'paid':
-            emoji = '💲'
-            break
-        case 'freemium':
-            emoji = '🆓💲'
-            break
-        default:
-            emoji = '❓'
-            break
-        
+    const emojiMap = {
+        blog: '💻',
+        x: '⚔️',
+        community: '🧑‍💻️',
+        newsletter: '🗞️',
+        youtube: '▶️',
+        website: '🌐',
+        book: '📖',
+        creator: '👷',
+        conference: '🤝',
+        podcast: '🎧',
+        tool: '⚒️',
+        free: '🆓',
+        paid: '💲',
+        freemium: '🆓💲',
     }
-    return emoji
+    return emojiMap[category] ?? '❓'
 }
 
 export function upperFirstLetter (string) {
