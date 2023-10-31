@@ -229,5 +229,12 @@
         "pricing": "free",
         "description": "3х Saas Founder 🌿 @aaplyHQ + @flowmapp + foundbase ✨$600,000 ARR → bootstrap, 🙅‍♂️ no VC, product-led growth, micro-teams, $0 marketing.",
         "external_link": "https://x.com/pmitu?s=20"
+    },
+    {
+        "name": "Taylor Otwell",
+        "categories": ["creator"],
+        "pricing": "free",
+        "description": "Taylor Otwell is a software developer and the creator of the PHP web application framework called Laravel. He is known for his contributions to the PHP community and for developing tools and resources to simplify web application development.",
+        "external_link": "https://twitter.com/taylorotwell"
     }
 ]
