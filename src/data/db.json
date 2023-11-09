@@ -236,5 +236,54 @@
         "pricing": "free",
         "description": "Taylor Otwell is a software developer and the creator of the PHP web application framework called Laravel. He is known for his contributions to the PHP community and for developing tools and resources to simplify web application development.",
         "external_link": "https://twitter.com/taylorotwell"
+    },
+    {
+        "name": "Startups for the rest of us",
+        "categories": ["podcast"],
+        "pricing": "free",
+        "description": "Whether you’re preparing to launch or you’ve hit $10M ARR, learn from successful founders who have been in your shoes.",
+        "external_link": "https://www.startupsfortherestofus.com/"
+    },
+    {
+        "name": "Getting to Ramen",
+        "categories": ["podcast"],
+        "pricing": "free",
+        "description": "Listen in as I navigate the slow SaaS ramp of death while asking for help along the way from people like Justin Jackson, Matt Wensing, and others who have gone before me.",
+        "external_link": "https://open.spotify.com/show/0UGH2QD1Fi0kg6suP8VA5u"
+    },
+    {
+        "name": "The Bootstrapped Founder Podcast",
+        "categories": ["podcast"],
+        "pricing": "free",
+        "description": "The Bootstrapped Founder Podcast is a weekly show about starting and bootstrapping businesses, how to build an audience, and how to build in public.",
+        "external_link": "https://thebootstrappedfounder.com/podcast/"
+    },
+    {
+        "name": "This Indie Life",
+        "categories": ["podcast"],
+        "pricing": "free",
+        "description": "This Indie Life follows the journey of two indie hackers, James McKinven and Dagobert Renouf, as we navigate the good, the bad and the ugly, attempting to turn our indie hacker dreams into reality.",
+        "external_link": "https://indielifepod.com/"
+    },
+    {
+        "name": "The Art of Product",
+        "categories": ["podcast"],
+        "pricing": "free",
+        "description": "The Art of Product is a podcast chronicling the journeys of two entrepreneurs building software companies. Hosted by Ben Orenstein and Derrick Reimer.",
+        "external_link": "https://artofproductpodcast.com/"
+    },
+    {
+        "name": "Bootstrapped Web",
+        "categories": ["podcast"],
+        "pricing": "free",
+        "description": "Brian Casel (@casjam) and Jordan Gal (@jordangal) share their raw and real behind-the-scenes of their entrepreneur journeys. From bootstrapping software startups to raising money to selling and exiting businesses, to growing teams and the emotional rollercoaster that is startup life. ",
+        "external_link": "https://bootstrappedweb.com/"
+    },
+    {
+        "name": "Startup to something",
+        "categories": ["podcast"],
+        "pricing": "free",
+        "description": "A weekly podcast by two indie hackers, Marc and Matt. Follow along as they share their ups and downs of building their bootstrapped online businesses.",
+        "external_link": "https://startuptosomething.com/"
     }
 ]
