@@ -89,8 +89,7 @@ async function analyticsData (valueToSend) {
     <div class="bg-slate-50">
 
         <div 
-        class="flex flex-row flex-wrap gap-3 m-2 items-center justify-center
-        xs:justify-start xs:text-sm p-3">
+        class="flex flex-row flex-wrap items-center justify-center gap-3 p-3 m-2 xs:justify-start xs:text-sm">
             <button v-for="category in categories" @click="filterStore(category)"
             :class="category === activeCategory 
             ? 'grayscale-0 rounded-full border-2 border-solid px-2.5 py-1.5 -m-[4px] font-semibold bg-white' 
@@ -99,16 +98,16 @@ async function analyticsData (valueToSend) {
             </button>
         </div>
 
-        <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 min-w-min xs:grid-cols-1 gap-3 m-3 overflow-hidden auto-cols-min auto-rows-min">
+        <div class="grid grid-cols-3 gap-3 m-3 overflow-hidden md:grid-cols-3 lg:grid-cols-4 min-w-min xs:grid-cols-1 auto-cols-min auto-rows-min">
 
             <div v-for="item in filteredStore"
-            class="border rounded-lg items-start bg-white px-5 py-1.5 justify-start block overflow-hidden h-auto">
+            class="border rounded-lg items-start bg-white px-5 py-1.5 justify-start block overflow-hidden h-auto hover:sm:shadow-lg hover:shadow-md">
 
                 <h4
-                class="font-semibold text-base my-2"
+                class="my-2 text-base font-semibold"
                 >{{ item.name }}</h4>
 
-                <p class="text-sm mb-5">{{ sliceString(item.description) }}</p>
+                <p class="mb-5 text-sm">{{ sliceString(item.description) }}</p>
 
                 <div class="flex flex-row flex-wrap items-center justify-between m-0.5">
 

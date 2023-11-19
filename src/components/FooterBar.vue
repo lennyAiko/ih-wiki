@@ -10,10 +10,9 @@ function scrollToTop() {
 
 <template>
 
-    <div class="fixed inset-x-0
-    bottom-0 items-center justify-center flex p-1 mt-auto w-full h-10 text-sm xs:text-sm bg-white border-t">
+    <div class="bottom-0 flex items-center justify-center w-full h-10 p-1 mt-auto text-sm bg-white border-t xs:text-sm">
         <p>Built with 💖 by 
-            <a :href="getRefLink('https://twitter.com/c_lennyx')" target="_blank">Lennox</a> | <button @click="scrollToTop">🔝</button>
+            <a :href="getRefLink('https://twitter.com/c_lennyx')" target="_blank">Lennox</a> | <button @click="scrollToTop" class="ml-0.5">🔝</button>
         </p>
     </div>
     
