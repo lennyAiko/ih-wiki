@@ -105,7 +105,7 @@ async function analyticsData (valueToSend) {
             </button>
         </div>
 
-        <div class="flex flex-row -mr-20">
+        <div class="flex flex-row">
 
             <div class="grid grid-cols-3 gap-3 overflow-hidden md:w-3/4 md:grid-cols-3 lg:grid-cols-4 min-w-min xs:grid-cols-1 auto-cols-min auto-rows-min">
                 
@@ -134,7 +134,7 @@ async function analyticsData (valueToSend) {
                 </div>
             </div>
 
-            <div class="fixed hidden w-1/5 h-fit right-5 md:flex md:flex-col">
+            <div class="fixed hidden right-5 md:w-1/5 h-fit md:flex md:flex-col">
                 <h3 class="mb-5 text-lg font-light">Quick View: </h3>
 
                 <div class="p-2 border-4 border-white rounded-lg md:shadow-xl">

@@ -285,5 +285,33 @@
         "pricing": "free",
         "description": "A weekly podcast by two indie hackers, Marc and Matt. Follow along as they share their ups and downs of building their bootstrapped online businesses.",
         "external_link": "https://startuptosomething.com/"
+    },
+    {
+        "name": "The Minimalist Entrepreneur",
+        "categories": ["book"],
+        "pricing": "paid",
+        "description": "A revolutionary roadmap for building startups that go the distance. Now more than ever, you don’t need a fancy office, Ivy League degree, or millions of dollars in venture capital to launch a business that matters for the communities you care most about. Software, the internet, and remote work have made it possible for entrepreneurs to start for free, make a customer of anyone, and grow a profitable, sustainable company from anywhere. ",
+        "external_link": "https://www.amazon.com/Minimalist-Entrepreneur-Great-Founders-More/dp/B08VPZX8GF/ref=sr_1_1?adgrpid=155902182478&hvadid=678787405855&hvdev=c&hvlocphy=1010289&hvnetw=g&hvqmt=e&hvrand=5779009638170819043&hvtargid=kwd-1219303314230&hydadcr=15834_13706130&keywords=the+minimalist+entrepreneur&qid=1700592943&sr=8-1"
+    },
+    {
+        "name": "Start Small, Stay Small: A Developer's Guide to Launching a Startup",
+        "categories": ["book"],
+        "pricing": "paid",
+        "description": "Start Small, Stay Small is a step-by-step guide to launching a self-funded startup. If you're a desktop, mobile or web developer, this book is your blueprint to getting your startup off the ground with no outside investment.This book intentionally avoids topics restricted to venture-backed startups such as: honing your investment pitch, securing funding, and figuring out how to use the piles of cash investors keep placing in your lap.",
+        "external_link": "https://www.amazon.com/Start-Small-Stay-Developers-Launching/dp/0615373968"
+    },
+    {
+        "name": "From Single to Scale: How a Single Person, Small Business, or an Entrepreneur Can Grow Their Business to Profit",
+        "categories": ["book"],
+        "pricing": "paid",
+        "description": "Scale your single-person business to profitability. Increase your audience, create multiple products, and generate more profit. This book takes you through the entire process of building a scalable business from the seemingly impossible place of being just one person.",
+        "external_link": "https://www.amazon.com/Single-Scale-Person-Business-Entrepreneur/dp/1484238133"
+    },
+    {
+        "name": "Start From Zero: Build Your Own Business. Experience True Freedom",
+        "categories": ["book"],
+        "pricing": "paid",
+        "description": "Learn How To Start A Business From Nothing. This book is full of real world stories from an entrepreneur who had over 10 business failures, started from nothing, and finally found the successful patterns to become a Millionaire before the age of 30. ",
+        "external_link": "https://www.goodreads.com/book/show/51624752-start-from-zero"
     }
 ]
