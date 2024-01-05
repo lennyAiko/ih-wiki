@@ -33,7 +33,7 @@ import { getRefLink } from "../helpers/utils";
       <div class="flex flex-row items-center flex-nowrap">
         <a
           href="https://blog-ihwiki.onrender.com/"
-          class="px-2 py-1 mx-2 text-sm font-bold transition-transform duration-500 ease-out border rounded-md md:text-lg hover:scale-105 border-slate-900"
+          class="px-2 py-1 mx-2 text-sm font-bold transition-transform duration-100 ease-out border rounded-md md:text-lg hover:scale-105 border-slate-900"
           >blog</a
         >
 
