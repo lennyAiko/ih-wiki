@@ -13,18 +13,9 @@ import HoverImage from "../assets/hover-on-card.png";
 
 const categories = ref();
 const store = ref(data);
-const filteredStore = ref([]);
+const filteredStore = ref();
 const search = ref("");
 const activeCategory = ref("");
-const perPage = ref(12);
-
-const totalPages = ref();
-const currentPage = ref(0);
-const paginatedItems = ref([]);
-
-if (window.innerWidth < 780) {
-  perPage.value = 8;
-}
 
 const quickViewData = ref("");
 
@@ -58,7 +49,6 @@ function filterStore(category) {
       return item;
     }
   });
-  currentPage.value = 0;
 }
 
 onMounted(() => {
@@ -69,25 +59,12 @@ onMounted(() => {
     .sort((a, b) => a.localeCompare(b));
   categories.value = [...new Set(categories.value)];
   filterStore("all");
-  totalPages.value = Math.ceil(filteredStore.value.length / perPage.value);
 });
 
 watch(search, () => {
   filteredStore.value = store.value.filter((item) =>
     item.name.toLowerCase().includes(search.value.toLowerCase())
   );
-});
-
-watch([filteredStore, currentPage], () => {
-  const startIndex = currentPage.value * perPage.value;
-
-  totalPages.value = Math.ceil(filteredStore.value.length / perPage.value);
-  paginatedItems.value = filteredStore.value.slice(
-    startIndex,
-    startIndex + perPage.value
-  );
-  if (perPage.value == 8)
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 });
 
 // implement counter
@@ -129,12 +106,12 @@ async function analyticsData(valueToSend) {
         <button
           v-for="(category, index) in categories"
           @click="filterStore(category)"
+          :key="index"
           :class="
             category === activeCategory
               ? 'grayscale-0 rounded-full border-2 border-solid px-2.5 py-1.5 -m-[4px] font-semibold bg-white'
               : 'rounded-full border-2 border-dashed px-2.5 py-1.5 -m-[4px] hover:border-solid font-semibold hover:grayscale-0 bg-white grayscale'
           "
-          :key="index"
         >
           {{ getCategoryEmoji(category) }} {{ upperFirstLetter(category) }}
         </button>
@@ -145,15 +122,15 @@ async function analyticsData(valueToSend) {
           class="grid grid-cols-3 gap-3 overflow-hidden md:w-3/4 md:grid-cols-3 lg:grid-cols-4 min-w-min xs:grid-cols-1 auto-cols-min auto-rows-min"
         >
           <div
-            v-for="(item, index) in paginatedItems"
+            v-for="(item, index) in filteredStore"
             class="border rounded-lg items-start bg-white px-5 py-1.5 justify-start block overflow-hidden h-auto hover:sm:shadow-lg hover:shadow-md"
-            :key="index"
             @mouseover="handleQuickViewData(item)"
             @mouseleave="
               () => {
                 quickViewData = '';
               }
             "
+            :key="index"
           >
             <h4 class="my-2 text-base font-semibold">{{ item.name }}</h4>
             <p class="mb-5 text-sm">{{ sliceString(item.description) }}</p>
@@ -246,53 +223,6 @@ async function analyticsData(valueToSend) {
             </div>
           </div>
         </div>
-      </div>
-      <!--pagination-->
-      <div
-        class="flex justify-center gap-5 mt-5"
-        v-if="filteredStore.length > perPage"
-      >
-        <button
-          @click="currentPage--"
-          :disabled="currentPage <= 0"
-          class="border rounded-lg items-start bg-white px-5 py-1.5 justify-start block overflow-hidden h-auto"
-        >
-          <svg
-            class="w-6 h-6"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <polyline points="15 18 9 12 15 6"></polyline>
-          </svg>
-        </button>
-        <span class="bg-white px-3 py-1.5">
-          {{ currentPage + 1 }} / {{ totalPages }}</span
-        >
-        <button
-          @click="currentPage++"
-          :disabled="currentPage >= totalPages - 1"
-          class="border rounded-lg items-start bg-white px-5 py-1.5 justify-start block overflow-hidden h-auto"
-        >
-          <span>
-            <svg
-              class="w-6 h-6"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </span>
-        </button>
       </div>
     </div>
 
