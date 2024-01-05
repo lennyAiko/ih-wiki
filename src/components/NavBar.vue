@@ -4,15 +4,17 @@ import { getRefLink } from "../helpers/utils";
 </script>
 
 <template>
-  <nav class="border-b w-full px-4 py-2.5 bg-white">
+  <nav class="border-b w-full px-1.5 md:px-4 py-2.5 bg-white">
     <div class="flex items-center justify-between">
       <div class="flex flex-row max-w-sm flex-nowrap">
-        <div class="flex flex-row items-center object-cover mr-2 flex-nowrap">
+        <div
+          class="flex flex-row items-center object-cover flex-nowrap shrink-0"
+        >
           <router-link to="/">
             <img
               src="/ihwiki.png"
               alt="ihwiki icon"
-              class="w-[60px] h-[60px] mx-2"
+              class="w-[60px] h-[60px] mr-1"
               loading="lazy"
               quality="100"
               width="1800"
@@ -28,7 +30,13 @@ import { getRefLink } from "../helpers/utils";
         />
       </div>
 
-      <div class="flex flex-row flex-nowrap">
+      <div class="flex flex-row items-center flex-nowrap">
+        <a
+          href="https://blog-ihwiki.onrender.com/"
+          class="mx-2 text-sm font-bold md:text-lg"
+          >blog</a
+        >
+
         <a href="https://tally.so/r/nWRN7P" target="_blank">
           <svg
             class="w-9 h-9 p-1.5 m-1 rounded-md border-slate-900 border"
