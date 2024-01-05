@@ -34,6 +34,7 @@ import { getRefLink } from "../helpers/utils";
         <a
           href="https://blog-ihwiki.onrender.com/"
           class="px-2 py-1 mx-2 text-sm font-bold transition-transform duration-100 ease-out border rounded-md md:text-lg hover:scale-105 border-slate-900"
+          target="_blank"
           >blog</a
         >
 
