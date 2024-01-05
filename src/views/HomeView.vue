@@ -132,7 +132,9 @@ async function analyticsData(valueToSend) {
             "
             :key="index"
           >
-            <h4 class="my-2 text-base font-semibold">{{ item.name }}</h4>
+            <h4 class="my-2 text-base font-semibold text-primary">
+              {{ item.name }}
+            </h4>
             <p class="mb-5 text-sm">{{ sliceString(item.description) }}</p>
             <div
               class="flex flex-row flex-wrap items-center justify-between m-0.5"
