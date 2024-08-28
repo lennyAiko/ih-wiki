@@ -355,5 +355,12 @@
     "pricing": "free",
     "description": "Awesome Indie is a small directory for makers and micro-startup founders to share their projects and get feedback from the community. We allow submissions of products made by solo-makers or startups bootstrapped by small teams are allowed. Also, the product should have a dedicated website.",
     "external_link": "https://awesomeindie.com/"
+  },
+  {
+    "name": "Naz Avo",
+    "categories": ["creator", "blog"],
+    "pricing": "free",
+    "description": "It's a blog of a recently retired 32-year-old software developer doing indie hacking with all the newly found free time. The blog's main theme is tech, nomadic lifestyle, and financial independence. Served with a pinch of Eastern European humor.",
+    "external_link": "https://nazavo.com/"
   }
 ]
