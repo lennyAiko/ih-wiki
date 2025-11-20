@@ -18,15 +18,8 @@ onMounted(() => {
   <div class="flex flex-col items-start m-[84px] p-6 xs:m-[8%]">
     <div class="">
       <router-link to="/">
-        <img
-          src="/ihwiki.png"
-          alt="ihwiki icon"
-          class="w-[80px] h-[80px] -ml-2"
-          loading="lazy"
-          quality="100"
-          width="1800"
-          height="1800"
-        />
+        <img src="/ihwiki.png" alt="ihwiki icon" class="w-[80px] h-[80px] -ml-2" loading="lazy" quality="100"
+          width="1800" height="1800" />
       </router-link>
     </div>
 
@@ -47,17 +40,22 @@ onMounted(() => {
 
       <p class="mt-2">
         Click the + sign above or follow the instructions
-        <a
-          href="https://github.com/lennyAiko/ih-wiki#code-method"
-          target="_blank"
-          class="underline"
-          >here</a
-        >
+        <a href="https://github.com/lennyAiko/ih-wiki#code-method" target="_blank" class="underline">here</a>
       </p>
 
       <p class="mt-2 font-light">{{ counter }} resource(s) available</p>
     </div>
-  </div>
+
+    <div class="my-5"></div>
+  
+
+  <a href="https://www.producthunt.com/products/indie-hackers-wiki-2?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-indie&#0045;hackers&#0045;wiki&#0045;2"
+    target="_blank"><img
+      src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1040611&theme=light&t=1763675742572"
+      alt="Indie&#0032;Hackers&#0032;Wiki - An&#0032;open&#0045;source&#0032;knowledge&#0032;base&#0032;for&#0032;indie&#0032;hackers | Product Hunt"
+      style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
+      </div>
 
   <FooterBar />
 </template>
